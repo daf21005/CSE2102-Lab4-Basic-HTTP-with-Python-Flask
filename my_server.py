@@ -20,7 +20,7 @@ def trial_division(n):
         factors.append(n)
     return factors
 
-def trial_division_prime_checker(n):
+def get_all_factors(n):
     factors = trial_division(n)
     # If the factors list contains only n itself, it's a prime
     if len(factors) == 1 and factors[0] == n:
@@ -44,7 +44,7 @@ def echo():
 
 @app.route("/factors/<int:inINT>")
 def get_factors(inINT):
-    factors = trial_division_prime_checker(inINT)
+    factors = get_all_factors(inINT)
     return jsonify(factors)
 
 

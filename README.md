@@ -3,7 +3,7 @@
 
 To run this system you want to type the command below into the Github's built-in terminal:
 
-python my-server.py
+python my_server.py
 
 The command above would start the server which its main functionality is to find the given interger factors.
 In another terminal, you want to run this command:
@@ -22,3 +22,7 @@ curl https://fluffy-space-barnacle-jj4x59w65rg4h5x9w-5000.app.github.dev/factors
 The expected output will be [1, 2, 2, 3] as these are the factors of 12
 
 If the user types in 7 instead of 12, the expected output will be [7]
+
+To run test_factors.py run this command:
+
+pytest test_factors.py

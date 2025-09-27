@@ -1,3 +1,5 @@
+# note to self: run these tests with `pytest test_factors.py`
+
 from my_server import get_all_factors
 import pytest
 
