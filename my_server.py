@@ -20,6 +20,7 @@ def trial_division(n):
         factors.append(n)
     return factors
 
+# This is somewhat a helper function to format the output correctly
 def get_all_factors(n):
     factors = trial_division(n)
     # If the factors list contains only n itself, it's a prime
